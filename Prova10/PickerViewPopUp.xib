@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerViewPopUp">
+            <connections>
+                <outlet property="PickerView" destination="8G7-8u-e4Z" id="R40-HF-0tP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Pll-3s-rjM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="550"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pg5-gj-wni">
+                    <rect key="frame" x="0.0" y="241" width="379" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVq-tq-ePE">
+                            <rect key="frame" x="263" y="0.0" width="116" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="116" id="h8m-Uq-gVS"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Selecionar"/>
+                            <connections>
+                                <action selector="Done:" destination="-1" eventType="touchUpInside" id="rWO-MW-gsd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93497631671420378" green="0.9451391027654451" blue="0.9451391027654451" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dVq-tq-ePE" secondAttribute="trailing" id="2iT-zv-0tr"/>
+                        <constraint firstAttribute="bottom" secondItem="dVq-tq-ePE" secondAttribute="bottom" id="C7r-TT-LmM"/>
+                        <constraint firstItem="dVq-tq-ePE" firstAttribute="top" secondItem="Pg5-gj-wni" secondAttribute="top" id="HPu-zJ-ZYK"/>
+                        <constraint firstAttribute="height" constant="45" id="yO1-cI-e5A"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jm7-0k-be4">
+                    <rect key="frame" x="0.0" y="286" width="379" height="264"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G7-8u-e4Z">
+                            <rect key="frame" x="0.0" y="0.0" width="379" height="264"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="264" id="SQD-wY-3da"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="CGQ-PS-18n"/>
+                                <outlet property="delegate" destination="-1" id="4vu-Xz-Io5"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8G7-8u-e4Z" secondAttribute="bottom" id="jPG-fU-tlI"/>
+                        <constraint firstAttribute="height" constant="264" id="nd3-XA-b3B"/>
+                        <constraint firstItem="8G7-8u-e4Z" firstAttribute="leading" secondItem="Jm7-0k-be4" secondAttribute="leading" id="u2C-UN-v06"/>
+                        <constraint firstAttribute="trailing" secondItem="8G7-8u-e4Z" secondAttribute="trailing" id="v8J-oC-SRV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5973238032" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jm7-0k-be4" secondAttribute="bottom" id="8GW-eq-H6M"/>
+                <constraint firstItem="Pg5-gj-wni" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D7K-AJ-FVg"/>
+                <constraint firstItem="Jm7-0k-be4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UB0-aP-5Ku"/>
+                <constraint firstItem="Jm7-0k-be4" firstAttribute="top" secondItem="Pg5-gj-wni" secondAttribute="bottom" id="UUu-8m-FgJ"/>
+                <constraint firstAttribute="trailing" secondItem="Pg5-gj-wni" secondAttribute="trailing" id="Uyg-UE-0EQ"/>
+                <constraint firstAttribute="trailing" secondItem="Jm7-0k-be4" secondAttribute="trailing" id="z4b-LA-3yb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="228.5" y="176"/>
+        </view>
+    </objects>
+</document>

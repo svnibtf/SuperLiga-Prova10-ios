@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectField">
+            <connections>
+                <outlet property="ArrowView" destination="w59-WS-ug6" id="4cv-ZZ-cyw"/>
+                <outlet property="Label" destination="h96-N8-n3N" id="seU-zU-7M1"/>
+                <outlet property="view" destination="ajQ-S3-d0L" id="p75-I9-fO7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ajQ-S3-d0L">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gE8-Wa-G7S">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h96-N8-n3N">
+                            <rect key="frame" x="0.0" y="0.0" width="112" height="43"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-arrow-down-yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="w59-WS-ug6">
+                            <rect key="frame" x="120" y="18" width="12" height="8"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="8" id="7mA-an-1fB"/>
+                                <constraint firstAttribute="width" constant="12" id="WzI-Nv-PfL"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHG-8j-zR9">
+                            <rect key="frame" x="0.0" y="0.0" width="140" height="43"/>
+                            <connections>
+                                <action selector="SelectValue:" destination="-1" eventType="touchUpInside" id="OJZ-wE-FUE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fHG-8j-zR9" secondAttribute="bottom" id="2Cp-fR-iEU"/>
+                        <constraint firstAttribute="trailing" secondItem="fHG-8j-zR9" secondAttribute="trailing" id="4Ls-Eh-Ebi"/>
+                        <constraint firstAttribute="trailing" secondItem="w59-WS-ug6" secondAttribute="trailing" constant="8" id="Ffx-Vr-rKr"/>
+                        <constraint firstItem="fHG-8j-zR9" firstAttribute="top" secondItem="gE8-Wa-G7S" secondAttribute="top" id="Oju-zO-nNy"/>
+                        <constraint firstItem="w59-WS-ug6" firstAttribute="leading" secondItem="h96-N8-n3N" secondAttribute="trailing" constant="8" id="PRb-fI-Me3"/>
+                        <constraint firstAttribute="bottom" secondItem="h96-N8-n3N" secondAttribute="bottom" id="Q9r-9U-oyO"/>
+                        <constraint firstItem="h96-N8-n3N" firstAttribute="leading" secondItem="gE8-Wa-G7S" secondAttribute="leading" id="RnQ-vw-801"/>
+                        <constraint firstItem="fHG-8j-zR9" firstAttribute="leading" secondItem="gE8-Wa-G7S" secondAttribute="leading" id="SOp-3U-3yI"/>
+                        <constraint firstItem="h96-N8-n3N" firstAttribute="top" secondItem="gE8-Wa-G7S" secondAttribute="top" id="Xvh-hm-vcr"/>
+                        <constraint firstItem="w59-WS-ug6" firstAttribute="centerY" secondItem="gE8-Wa-G7S" secondAttribute="centerY" id="yNh-Yg-Ftz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gE8-Wa-G7S" secondAttribute="trailing" id="4Kf-Pg-Or0"/>
+                <constraint firstAttribute="bottom" secondItem="gE8-Wa-G7S" secondAttribute="bottom" id="Dpi-8f-CRP"/>
+                <constraint firstItem="gE8-Wa-G7S" firstAttribute="top" secondItem="ajQ-S3-d0L" secondAttribute="top" id="c5u-Qv-rsa"/>
+                <constraint firstItem="gE8-Wa-G7S" firstAttribute="leading" secondItem="ajQ-S3-d0L" secondAttribute="leading" id="vz2-p0-XIW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="311" y="227.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-arrow-down-yellow.png" width="17" height="10"/>
+    </resources>
+</document>

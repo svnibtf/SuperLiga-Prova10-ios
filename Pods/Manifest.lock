@@ -1,0 +1,17 @@
+PODS:
+  - ISMessages (1.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - ISMessages
+  - SDWebImage (~> 3.8)
+
+SPEC CHECKSUMS:
+  ISMessages: d39098b48672813d69d30f44da06260b9920fed4
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+
+PODFILE CHECKSUM: d6128b2dc944e6f353390d8a54002007306bde9d
+
+COCOAPODS: 1.0.1
